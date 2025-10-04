@@ -89,7 +89,7 @@ class Meaning {
   });
 
   @override
-  String toString() => 'Meaning(translations: $translations, usage: $usage)';
+  String toString() => 'Translations: ${translations.join(", ")}\nUsage: ${usage.name}';
 }
 
 class Origin {
@@ -106,4 +106,6 @@ class Origin {
   String toString() => 'Origin(word: $word, language: $language, meaning: $meaning)';
 }
 
-enum Usage {interject, adjective, noun, verb, particle, number, preverb}
+enum Usage {
+  interject, adjective, noun, verb, particle, number, preverb
+  }

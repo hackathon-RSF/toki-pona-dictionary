@@ -34,7 +34,13 @@ class WordsListWidget extends StatelessWidget {
                 showDialog(
                   context: context,
                   builder: (context) => AlertDialog(
-                    content: WordCard(entry: filteredWords[index]),
+                    backgroundColor: Colors.transparent,
+                    contentPadding: EdgeInsets.zero,
+                    content: SizedBox(
+                      width: 500, // larghezza desiderata
+                      height: 400, // altezza desiderata
+                      child: WordCard(entry: filteredWords[index]),
+                    ),
                   ),
                 );
               },
