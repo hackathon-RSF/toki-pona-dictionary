@@ -90,45 +90,58 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Toki Pona Dictionary',
-              style: GoogleFonts.ibmPlexMono(
-                textStyle: Theme.of(context).textTheme.displayLarge,
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                //fontStyle: FontStyle.italic,
-              ),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFC0F3FF), Color(0xFFC3FFB0)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
-            const Text('Barra ricerca -O'),
-            WordsListWidget(),
-            const Text('One-day project by Hackaton-RSF'),
-            // Text(
-            //   '$_counter',
-            //   style: Theme.of(context).textTheme.headlineMedium,
-            // ),
-          ],
+          ),
+          child: Column(
+            // Column is also a layout widget. It takes a list of children and
+            // arranges them vertically. By default, it sizes itself to fit its
+            // children horizontally, and tries to be as tall as its parent.
+            //
+            // Column has various properties to control how it sizes itself and
+            // how it positions its children. Here we use mainAxisAlignment to
+            // center the children vertically; the main axis here is the vertical
+            // axis because Columns are vertical (the cross axis would be
+            // horizontal).
+            //
+            // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
+            // action in the IDE, or press "p" in the console), to see the
+            // wireframe for each widget.
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const SizedBox(height: 100),
+              Text(
+                'Toki Pona Dictionary',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.ibmPlexMono(
+                  textStyle: Theme.of(context).textTheme.displayLarge,
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  //fontStyle: FontStyle.italic,
+                ),
+              ),
+              const SizedBox(height: 30),
+              const Text('Barra ricerca -O'),
+              WordsListWidget(),
+              const Text('One-day project by Hackaton-RSF'),
+              // Text(
+              //   '$_counter',
+              //   style: Theme.of(context).textTheme.headlineMedium,
+              // ),
+            ],
+          ),
         ),
+        // floatingActionButton: FloatingActionButton(
+        //   onPressed: _incrementCounter,
+        //   tooltip: 'Increment',
+        //   child: const Icon(Icons.add),
+        // ), // This trailing comma makes auto-formatting nicer for build methods.
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: _incrementCounter,
-      //   tooltip: 'Increment',
-      //   child: const Icon(Icons.add),
-      // ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
