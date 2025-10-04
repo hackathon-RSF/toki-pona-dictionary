@@ -1,2 +1,3 @@
-# toki-pona-dictionary
-A mobile dictionary for Toki Pona language.
+# Toki Pona Dictionary
+
+A mobile dictionary for the Toki Pona language.
