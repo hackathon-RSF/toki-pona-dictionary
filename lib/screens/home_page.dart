@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:toki_pona_dictionary/shared/widgets/search_bar.dart';
-import '../shared/widgets/wordsList.dart'; //
-
+import 'package:toki_pona_dictionary/shared/widgets/words_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
