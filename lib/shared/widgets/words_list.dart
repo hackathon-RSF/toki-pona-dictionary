@@ -24,7 +24,7 @@ class _WordsListWidgetState extends State<WordsListWidget> {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             child: ListTile(
-              title: Text(words[index].word, textAlign: TextAlign.center,),
+              title: Text(filteredWords[index].word, textAlign: TextAlign.center,),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
