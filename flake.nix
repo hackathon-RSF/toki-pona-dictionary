@@ -33,6 +33,7 @@
             "android-sdk-arm-dbt-license"
             "android-sdk-license"
             "android-sdk-preview-license"
+            "android-googlexr-license"
             "google-gdk-license"
             "intel-android-extra-license"
             "intel-android-sysimage-license"
