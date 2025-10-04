@@ -1,6 +1,7 @@
 # Miscellaneous
 *.class
 *.lock
+!flake.lock
 *.log
 *.pyc
 *.swp
@@ -122,7 +123,6 @@ app.*.symbols
 
 node_modules/
 
-# Nix stuff (Randa config)
-flake.lock
+# direnv (Randa config)
 .direnv
 .envrc
