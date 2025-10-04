@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toki_pona_dictionary/data/dict_repo.dart';
+import 'package:provider/provider.dart';
+import 'package:toki_pona_dictionary/model/searched_word.dart';
 
 class WordsListWidget extends StatefulWidget {
   @override
@@ -7,20 +9,17 @@ class WordsListWidget extends StatefulWidget {
 }
 
 class _WordsListWidgetState extends State<WordsListWidget> {
-  // void _incrementCounter() {
-  //   setState(() {
-
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     final List<Entry> words = loadWords(); //Repository.fetchTodos();
+    var filter = context.watch<SearchedWord>().wordValue.toLowerCase();
+    final filteredWords = words
+        .where((entry) => entry.word.toLowerCase().contains(filter))
+        .toList();
 
     return Expanded(
-      // 👈 per farlo adattare bene dentro la Column
       child: ListView.builder(
-        itemCount: words.length,
+        itemCount: filteredWords.length,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
@@ -30,12 +29,8 @@ class _WordsListWidgetState extends State<WordsListWidget> {
                 borderRadius: BorderRadius.circular(12),
               ),
               tileColor: Colors.transparent, // colore di default
-              hoverColor: Colors.white.withValues(
-                alpha: 0.2,
-              ), // effetto hover (web/desktop)
-              selectedTileColor: Colors.white.withValues(
-                alpha: 0.3,
-              ), // effetto click/selected
+              hoverColor: Colors.white.withValues(alpha: 0.2),
+              selectedTileColor: Colors.white.withValues(alpha: 0.3),
               onTap: () {
                 debugPrint('Hai premuto: ${words[index].word}');
               },

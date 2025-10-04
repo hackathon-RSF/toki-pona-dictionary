@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:toki_pona_dictionary/model/searched_word.dart';
 
 /// A simple search bar widget that updates the searched word in the provided model. It needs a ChangeNotifierProvider&lt;SearchedWord&gt; ancestor in the widget tree.
 class SearchBarWidget extends StatelessWidget {
@@ -20,17 +21,5 @@ class SearchBarWidget extends StatelessWidget {
         },
       ),
     );
-  }
-}
-
-/// This is the model that holds the searched word and notifies listeners on change.
-class SearchedWord extends ChangeNotifier {
-  var word = '';
-
-  String get wordValue => word;
-
-  void changeWord(String newWord) {
-    word = newWord;
-    notifyListeners();
   }
 }
