@@ -128,11 +128,26 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(height: 30),
               const Text('Barra ricerca -O'),
               WordsListWidget(),
-              const Text('One-day project by Hackaton-RSF'),
-              // Text(
-              //   '$_counter',
-              //   style: Theme.of(context).textTheme.headlineMedium,
-              // ),
+              Text(
+                'One-day project by',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.ibmPlexMono(
+                  textStyle: Theme.of(context).textTheme.displayLarge,
+                  fontSize: 16,
+                  letterSpacing: 2.0,
+                ),
+              ),
+              Text(
+                'Hackaton-RSF',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.ibmPlexMono(
+                  textStyle: Theme.of(context).textTheme.displayLarge,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2.0,
+                ),
+              ),
+              const SizedBox(height: 10),
             ],
           ),
         ),
