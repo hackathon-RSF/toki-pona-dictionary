@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toki_pona_dictionary/data/dict_repo.dart';
 import 'package:provider/provider.dart';
 import 'package:toki_pona_dictionary/model/searched_word.dart';
+import 'package:toki_pona_dictionary/shared/widgets/word_card.dart';
 
 class WordsListWidget extends StatefulWidget {
   @override
@@ -35,7 +36,12 @@ class _WordsListWidgetState extends State<WordsListWidget> {
               hoverColor: Colors.white.withValues(alpha: 0.2),
               selectedTileColor: Colors.white.withValues(alpha: 0.3),
               onTap: () {
-                debugPrint('Hai premuto: ${words[index].word}');
+                showDialog(
+                  context: context,
+                  builder: (context) => AlertDialog(
+                    content: WordCard(entry: filteredWords[index]),
+                  ),
+                );
               },
             ),
           );
