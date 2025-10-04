@@ -11,7 +11,7 @@ class WordsListWidget extends StatefulWidget {
 class _WordsListWidgetState extends State<WordsListWidget> {
   @override
   Widget build(BuildContext context) {
-    final List<Entry> words = loadWords(); //Repository.fetchTodos();
+    final List<Entry> words = loadWords();
     var filter = context.watch<SearchedWord>().wordValue.toLowerCase();
     final filteredWords = words
         .where((entry) => entry.word.toLowerCase().contains(filter))
@@ -24,7 +24,10 @@ class _WordsListWidgetState extends State<WordsListWidget> {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             child: ListTile(
-              title: Text(filteredWords[index].word, textAlign: TextAlign.center,),
+              title: Text(
+                filteredWords[index].word,
+                textAlign: TextAlign.center,
+              ),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
