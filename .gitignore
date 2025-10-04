@@ -121,3 +121,8 @@ app.*.symbols
 # NPM
 
 node_modules/
+
+# Nix stuff (Randa config)
+flake.lock
+.direnv
+.envrc
