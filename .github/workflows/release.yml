@@ -38,5 +38,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          body: "New release of the Flutter app."
+          files: build/app/outputs/flutter-apk/toki-pona-dictionary-v${{ github.ref_name }}.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
