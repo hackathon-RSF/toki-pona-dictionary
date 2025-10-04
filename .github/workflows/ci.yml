@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [dev, main]
+  pull_request:
+    branches: [dev, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v22
+        with:
+          nix_path: nixpkgs=channel:nixos-24.11
+
+      - name: Install dependencies
+        run: nix develop --command flutter pub get
+
+      - name: Run analyzer
+        run: nix develop --command flutter analyze
