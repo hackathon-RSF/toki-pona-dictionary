@@ -1,6 +1,6 @@
 {
   "name": "toki-pona-dictionary",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A mobile dictionary for the Toki Pona language.",
   "main": "index.js",
   "directories": {
