@@ -4,12 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:toki_pona_dictionary/model/searched_word.dart';
 import 'package:toki_pona_dictionary/shared/widgets/word_card.dart';
 
-class WordsListWidget extends StatefulWidget {
-  @override
-  State<WordsListWidget> createState() => _WordsListWidgetState();
-}
-
-class _WordsListWidgetState extends State<WordsListWidget> {
+class WordsListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<Entry> words = loadWords();
