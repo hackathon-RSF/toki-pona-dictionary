@@ -752,6 +752,28 @@ List<Entry> loadWords() {
         meaning: "earth, land"
       ),
     ),
+    Entry(
+      word: "mama",
+      meanings: [
+        Meaning(
+          translations: ["parent", "ancestor"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["creator", "originator"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["caretaker", "sustainer", "guardian"],
+          usage: Usage.noun
+        ),
+      ],
+      origin: Origin(
+        word: "mama",
+        language: "Georgian",
+        meaning: "father"
+      ),
+    ),
   ];
 }
 
