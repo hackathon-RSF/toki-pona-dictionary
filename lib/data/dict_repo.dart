@@ -487,3 +487,4 @@ class Origin {
 }
 
 enum Usage {interject, adjective, noun, verb, particle, number, preverb, preposition}
+
