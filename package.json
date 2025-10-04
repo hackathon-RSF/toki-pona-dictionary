@@ -1,0 +1,31 @@
+{
+  "name": "toki-pona-dictionary",
+  "version": "1.0.0",
+  "description": "A mobile dictionary for the Toki Pona language.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackathon-RSF/toki-pona-dictionary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hackathon-RSF/toki-pona-dictionary/issues"
+  },
+  "homepage": "https://github.com/hackathon-RSF/toki-pona-dictionary#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "husky": "^9.1.7"
+  }
+}
