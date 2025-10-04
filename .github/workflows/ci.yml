@@ -18,7 +18,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-24.11
 
       - name: Install dependencies
-        run: nix develop flutter pub get
+        run: nix develop --command flutter pub get
 
       - name: Run analyzer
-        run: nix develop flutter analyze
+        run: nix develop --command flutter analyze
