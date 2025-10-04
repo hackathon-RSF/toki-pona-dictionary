@@ -40,6 +40,6 @@ jobs:
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
           body: "New release of the Flutter app."
-          files: build/app/outputs/flutter-apk/toki-pona-dictionary-v${{ github.ref_name }}.apk
+          files: build/app/outputs/flutter-apk/toki-pona-dictionary.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

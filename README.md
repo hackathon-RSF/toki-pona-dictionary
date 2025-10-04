@@ -30,4 +30,4 @@ lib/
 
 ## 🚀 Download it now
 
-[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/<your-username>/<your-repo>/releases/latest/download/app-release.apk)
+[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/hackathon-RSF/toki-pona-dictionary/releases/latest/download/toki-pona-dictionary.apk)
