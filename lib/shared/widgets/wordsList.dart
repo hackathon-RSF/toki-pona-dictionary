@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toki_pona_dictionary/data/dict_repo.dart';
 
 class WordsListWidget extends StatefulWidget {
   @override
@@ -14,11 +15,7 @@ class _WordsListWidgetState extends State<WordsListWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final List<String> words = [
-      "cIAO",
-      "tOKy",
-      "Pony",
-    ]; //Repository.fetchTodos();
+    final List<Entry> words = loadWords(); //Repository.fetchTodos();
 
     return Expanded(
       // 👈 per farlo adattare bene dentro la Column
@@ -28,7 +25,7 @@ class _WordsListWidgetState extends State<WordsListWidget> {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             child: ListTile(
-              title: Text(words[index]),
+              title: Text(words[index].word, textAlign: TextAlign.center,),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
@@ -40,7 +37,7 @@ class _WordsListWidgetState extends State<WordsListWidget> {
                 alpha: 0.3,
               ), // effetto click/selected
               onTap: () {
-                debugPrint('Hai premuto: ${words[index]}');
+                debugPrint('Hai premuto: ${words[index].word}');
               },
             ),
           );
