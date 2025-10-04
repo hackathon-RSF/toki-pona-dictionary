@@ -80,6 +80,7 @@ List<Entry> loadWords() {
         language: "Dutch",
         meaning: "all"
       ),
+    ),
     Entry(
       word: "anpa",
       meanings: [
