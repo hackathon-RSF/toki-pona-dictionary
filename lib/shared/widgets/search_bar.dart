@@ -10,10 +10,12 @@ class SearchBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var model = context.watch<SearchedWord>();
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
       child: TextField(
         decoration: InputDecoration(
-          border: OutlineInputBorder(),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(25),
+          ),
           hintText: 'Search...',
         ),
         onChanged: (text) {

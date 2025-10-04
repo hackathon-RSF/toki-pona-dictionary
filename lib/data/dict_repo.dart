@@ -103,7 +103,7 @@ class Origin {
   });
 
   @override
-  String toString() => 'Origin(word: $word, language: $language, meaning: $meaning)';
+  String toString() => 'Word: $word ($language), Meaning: $meaning';
 }
 
 enum Usage {

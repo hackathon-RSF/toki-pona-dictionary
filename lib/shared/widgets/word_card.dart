@@ -57,7 +57,7 @@ class WordCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  (entry.origin?.word ?? 'No origin'),
+                  (entry.origin != null ? entry.origin.toString() : 'No origin'),
                   style: GoogleFonts.ibmPlexMono(
                     textStyle: Theme.of(context).textTheme.displayLarge,
                     fontSize: 16,
