@@ -444,6 +444,314 @@ List<Entry> loadWords() {
         meaning: "color"
       ),
     ),
+    Entry(
+      word: "kulupu",
+      meanings: [
+        Meaning(
+          translations: ["group", "community", "society", "company", "nation", "collection", "team", "crowd"],
+          usage: Usage.noun
+        ),
+      ],
+      origin: Origin(
+        word: "kulupu",
+        language: "Tongan",
+        meaning: "group"
+      ),
+    ),
+    Entry(
+      word: "kute",
+      meanings: [
+        Meaning(
+          translations: ["ear", "hearing organ"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["hear", "listen", "pay attention to", "obey"],
+          usage: Usage.verb
+        ),
+      ],
+      origin: Origin(
+        word: "écouter",
+        language: "Acadian French",
+        meaning: "listen"
+      ),
+    ),
+    Entry(
+      word: "la",
+      meanings: [
+        Meaning(
+          translations: ["'mark the previous statement as context to the following statement'"],
+          usage: Usage.particle
+        ),
+      ],
+      origin: Origin(
+        word: "la",
+        language: "Esperanto",
+        meaning: "'definite article'"
+      ),
+    ),
+    Entry(
+      word: "lape",
+      meanings: [
+        Meaning(
+          translations: ["sleep", "rest", "break from an activity or work"],
+          usage: Usage.verb
+        ),
+      ],
+      origin: Origin(
+        word: "slapen",
+        language: "Dutch",
+        meaning: "sleep"
+      ),
+    ),
+    Entry(
+      word: "laso",
+      meanings: [
+        Meaning(
+          translations: ["turquoise", "blue", "green", "cyan", "indigo", "lime green"],
+          usage: Usage.noun
+        ),
+      ],
+      origin: Origin(
+        word: "glas",
+        language: "Welsh",
+        meaning: "blue, inexperienced"
+      ),
+    ),
+    Entry(
+      word: "lawa",
+      meanings: [
+        Meaning(
+          translations: ["head", "mind", "brain"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["government", "leader"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["rule", "law"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["control", "direct", "lead", "own", "plan", "regulate", "to rule"],
+          usage: Usage.verb
+        ),
+      ],
+      origin: Origin(
+        word: "glava",
+        language: "Serbo-Croatian",
+        meaning: "head"
+      ),
+    ),
+    Entry(
+      word: "len",
+      meanings: [
+        Meaning(
+          translations: ["cloth", "clothing", "fabric", "textile"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["covered", "hidden", "secret", "private"],
+          usage: Usage.verb
+        ),
+      ],
+      origin: Origin(
+        word: "linge",
+        language: "Acadian French",
+        meaning: "clothing"
+      ),
+    ),
+    Entry(
+      word: "lete",
+      meanings: [
+        Meaning(
+          translations: ["cold", "cool"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["freeze", "chill"],
+          usage: Usage.verb
+        ),
+        Meaning(
+          translations: ["raw", "uncooked"],
+          usage: Usage.adjective
+        ),
+      ],
+      origin: Origin(
+        word: "frette",
+        language: "Acadian French",
+        meaning: "cold"
+      ),
+    ),
+    Entry(
+      word: "li",
+      meanings: [
+        Meaning(
+          translations: ["'marks the start of an indicative verb (statement)'"],
+          usage: Usage.particle
+        ),
+      ],
+      origin: Origin(
+        word: "li",
+        language: "Esperanto",
+        meaning: "he"
+      ),
+    ),
+    Entry(
+      word: "lili",
+      meanings: [
+        Meaning(
+          translations: ["small", "short", "young", "few", "piece", "part"],
+          usage: Usage.adjective
+        ),
+      ],
+      origin: Origin(
+        word: "liklik",
+        language: "Tok Pisin",
+        meaning: "small, little"
+      ),
+    ),
+    Entry(
+      word: "linja",
+      meanings: [
+        Meaning(
+          translations: ["long", "flexible thing", "rope", "yarn", "hair", "fur", "line", "strand"],
+          usage: Usage.noun
+        ),
+      ],
+      origin: Origin(
+        word: "linja",
+        language: "Finnish",
+        meaning: "line"
+      ),
+    ),
+    Entry(
+      word: "lipu",
+      meanings: [
+        Meaning(
+          translations: ["flat and bendable object", "paper", "card", "leaf"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["written text or document", "book", "website", "clay", "tablet"],
+          usage: Usage.noun
+        ),
+      ],
+      origin: Origin(
+        word: "lippu",
+        language: "Finnish",
+        meaning: "flag"
+      ),
+    ),
+    Entry(
+      word: "loje",
+      meanings: [
+        Meaning(
+          translations: ["red", "magenta", "scarlet", "pink", "rust-colored", "reddish orange"],
+          usage: Usage.noun
+        ),
+      ],
+      origin: Origin(
+        word: "rooie",
+        language: "Dutch",
+        meaning: "red"
+      ),
+    ),
+    Entry(
+      word: "lon",
+      meanings: [
+        Meaning(
+          translations: ["present", "existing", "real", "true"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["located at", "in", "during", "in the context of"],
+          usage: Usage.preposition
+        ),
+      ],
+      origin: Origin(
+        word: "long",
+        language: "Tok Pisin",
+        meaning: "at, in, on"
+      ),
+    ),
+    Entry(
+      word: "luka",
+      meanings: [
+        Meaning(
+          translations: ["hand", "arm", "tactile limb", "grasping limb"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["to grasp", "interact with", "feel using touch"],
+          usage: Usage.verb
+        ),
+        Meaning(
+          translations: ["five"],
+          usage: Usage.number
+        ),
+      ],
+      origin: Origin(
+        word: "ruka",
+        language: "Serbo-Croatian",
+        meaning: "hand, arm"
+      ),
+    ),
+    Entry(
+      word: "lukin",
+      meanings: [
+        Meaning(
+          translations: ["see", "look", "view", "examine", "read", "watch"],
+          usage: Usage.verb
+        ),
+        Meaning(
+          translations: ["eye", "seeing organ"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["to seek", "look for", "try to"],
+          usage: Usage.preverb
+        ),
+      ],
+      origin: Origin(
+        word: "lukim",
+        language: "Tok Pisin",
+        meaning: "see, look at"
+      ),
+    ),
+    Entry(
+      word: "lupa",
+      meanings: [
+        Meaning(
+          translations: ["hole", "pit", "cave", "doorway", "window", "portal"],
+          usage: Usage.noun
+        ),
+      ],
+      origin: Origin(
+        word: "clupa",
+        language: "Lojban",
+        meaning: "loop"
+      ),
+    ),
+    Entry(
+      word: "ma",
+      meanings: [
+        Meaning(
+          translations: ["earth", "land", "soil"],
+          usage: Usage.noun
+        ),
+        Meaning(
+          translations: ["country", "territory", "world", "outdoors"],
+          usage: Usage.noun
+        ),
+      ],
+      origin: Origin(
+        word: "maa",
+        language: "Finnish",
+        meaning: "earth, land"
+      ),
+    ),
   ];
 }
 
