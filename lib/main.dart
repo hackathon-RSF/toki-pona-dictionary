@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'shared/widgets/wordsList.dart'; //
 
 void main() {
   runApp(const MyApp());
@@ -104,9 +106,16 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('Toki Pona Dictionary'),
+            Text('Toki Pona Dictionary',
+              style: GoogleFonts.ibmPlexMono(
+                textStyle: Theme.of(context).textTheme.displayLarge,
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+                //fontStyle: FontStyle.italic,
+              ),
+            ),
             const Text('Barra ricerca -O'),
-            const Text('List'),
+            WordsListWidget(),
             const Text('One-day project by Hackaton-RSF'),
             // Text(
             //   '$_counter',
