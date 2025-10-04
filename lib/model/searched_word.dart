@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 class SearchedWord extends ChangeNotifier {
   var word = '';
 
+  /// Returns the current searched word.
   String get wordValue => word;
 
+  /// Updates the searched word and notifies listeners.
   void changeWord(String newWord) {
     word = newWord;
     notifyListeners();
