@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false, 
       body: Center(
         child: Container(
           decoration: const BoxDecoration(
@@ -25,7 +26,7 @@ class HomePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                SizedBox(height: 100),
+                SizedBox(height: 90),
                 Text(
                   'Toki Pona Dictionary',
                   textAlign: TextAlign.center,
@@ -38,6 +39,7 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 30),
                 SearchBarWidget(),
                 WordsListWidget(),
+                SizedBox(height: 30),
                 Text(
                   'One-day project by',
                   textAlign: TextAlign.center,

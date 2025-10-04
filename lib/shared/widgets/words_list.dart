@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:toki_pona_dictionary/data/dict_repo.dart';
 import 'package:provider/provider.dart';
 import 'package:toki_pona_dictionary/model/searched_word.dart';
@@ -18,18 +19,15 @@ class WordsListWidget extends StatelessWidget {
         itemCount: filteredWords.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
             child: ListTile(
               title: Text(
                 filteredWords[index].word,
                 textAlign: TextAlign.center,
+                style: GoogleFonts.ibmPlexMono(
+                  fontSize: 20,
+                ),
               ),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-              tileColor: Colors.transparent, // colore di default
-              hoverColor: Colors.white.withValues(alpha: 0.2),
-              selectedTileColor: Colors.white.withValues(alpha: 0.3),
               onTap: () {
                 showDialog(
                   context: context,
@@ -37,9 +35,9 @@ class WordsListWidget extends StatelessWidget {
                     backgroundColor: Colors.transparent,
                     contentPadding: EdgeInsets.zero,
                     content: SizedBox(
-                      width: 500, // larghezza desiderata
-                      height: 400, // altezza desiderata
-                      child: WordCard(entry: filteredWords[index]),
+                      child: SingleChildScrollView(
+                        child: WordCard(entry: filteredWords[index]),
+                      ),
                     ),
                   ),
                 );

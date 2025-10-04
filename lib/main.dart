@@ -13,7 +13,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Toki Pona Dictionary',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
       ),
       home: const HomePage(),
     );
