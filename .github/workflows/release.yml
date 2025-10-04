@@ -32,14 +32,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: app-release-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: build/app/outputs/flutter-apk/toki-pona-dictionary.apk
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
-          body: "New release of the Flutter app."
+          body: "New release of Toki Pona Dictionary."
           files: build/app/outputs/flutter-apk/toki-pona-dictionary.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
